@@ -1,0 +1,415 @@
+@font-face {
+    font-family: Ubuntu;
+    font-weight: normal;
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu;
+    font-weight: bold;
+    src: url(../fonts/Ubuntu-Bold.ttf)
+}
+
+@font-face {
+    font-family: Ubuntu;
+    font-weight: 300;
+    src: url(../fonts/Ubuntu-Light.ttf)
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    background: linear-gradient(to right, #613f84, #815ca6);
+
+}
+
+.rounded-section {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.v-align:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 0;
+
+}
+
+.v-align:before ~ * {
+    vertical-align: middle;
+}
+
+.clearfix:after {
+    width: 100%;
+    content: "";
+    height: 0;
+    font-size: 0;
+    clear: both;
+    display: block;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 11px 13px 11px 44px;
+    font: normal 20px/1 Ubuntu, sans-serif;
+    border-radius: 5px;
+    background: #b8e;
+    box-shadow: 0 2px 0 0 #5b3784;
+    position: relative;
+}
+
+.button:before {
+    content: "";
+    position: absolute;
+    height: 21px;
+    width: 22px;
+    background: url(../img/linkedin-icon.svg) center no-repeat;
+    top: 50%;
+    margin-top: -13px;
+    left: 10px;
+}
+
+.button:hover {
+    background: #c9f;
+    box-shadow: 0 2px 0 0 #6b4794;
+}
+
+.button:active {
+    background: #a7d;
+    box-shadow: 0 2px 0 0 #4b2774;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -204px;
+    padding-bottom: 204px;
+}
+
+.header {
+    height: 98px;
+    background: white;
+
+}
+
+.logo-container {
+    width: 30%;
+    height: 90px;
+    float: left;
+    background-image: url(Logo_placeholder.jpg);
+    background-repeat: no-repeat;
+}
+
+.menu-container {
+    width: 70%;
+    margin-left: 30%;
+    height: 98px;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: justify;
+    font-size: 0;
+}
+
+.menu:after {
+    display: inline-block;
+    content: "";
+    width: 100%;
+    font-size: 0;
+    height: 0;
+}
+
+.menu, .menu-item {
+    height: inherit;
+}
+
+.menu-item {
+    display: inline-block;
+    font-size: 20px;
+
+}
+
+.menu-link {
+    color: #8e3090;
+    font-family: Ubuntu, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 95px;
+    border-top: 3px solid transparent;
+    transition: border .3s;
+}
+
+.menu-link:hover {
+    border-top-color: #8e308f
+}
+
+.hero-lower {
+    background: #ffffff;
+}
+
+.hero-heading {
+    color: #fff;
+    margin: 30px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.hero-heading-main {
+    display: block;
+    text-transform: uppercase;
+    font: bold 36px/1 Ubuntu, sans-serif;
+
+}
+
+.hero-heading-desc {
+    font: 300 20px/1 sans-serif;
+}
+
+.hero-img {
+    float: left;
+    width: 68%;
+    font-size: 0;
+}
+
+.hero-pic {
+    width: 100%;
+    height: auto;
+}
+
+.hero-connect {
+    margin-left: 68%;
+    padding: 28px;
+    padding-right: 0;
+    color: #ffffff;
+}
+
+.hero-connect-label {
+    margin-bottom: 27px;
+    padding-left: 24px;
+    font-size: 14px;
+    font-family: "cursive";
+    line-height: 1.2;
+    -moz-transform: matrix(0.99746355304888, -0.07117907233942, 0.07117907233942, 0.99746355304888, 0, 0);
+    -webkit-transform: matrix(0.99746355304888, -0.07117907233942, 0.07117907233942, 0.99746355304888, 0, 0);
+    -ms-transform: matrix(0.99746355304888, -0.07117907233942, 0.07117907233942, 0.99746355304888, 0, 0);
+    position: relative;
+    display: inline-block;
+}
+
+.hero-connect-label:after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: url(../img/arrow.png) no-repeat center;
+    width: 38px;
+    height: 22px;
+    bottom: 0;
+}
+
+.hero-connect-desc {
+    font: 300 16px sans-serif;
+    margin-top: 22px;
+    text-align: justify;
+}
+
+.hero-features {
+    background-color: white;
+    height: 150px;
+    width: 100%;
+}
+
+.feature-item-pic {
+    float: left;
+    color: #815ca6;
+    font-size: 0;
+    padding: 15px;
+    padding-left: 5px;
+    display: block;
+}
+
+.feature-item-pic-2 {
+    text-align: center;
+    color: #815ca6;
+    font-size: 0;
+    display: inline-block;
+    padding: 0 0 0 370px;
+    position: relative;
+    top: -120px;
+}
+
+.feature-heading {
+    color: #815ca6;
+    margin: 15px;
+    display: inline-block;
+    width: 100%;
+    margin-top: -20px;
+}
+
+.feature-heading-desc {
+    list-style-type: none;
+    text-decoration: none;
+    position: relative;
+    top: -10px;
+    right: -40px;
+}
+
+.features-heading-desc {
+    color: #815ca6;
+    margin: 15px;
+    display: inline-block;
+    width: 100%;
+    margin-top: -20px;
+
+}
+
+.features-heading-text {
+    list-style-type: none;
+    text-decoration: none;
+    position: relative;
+    top: -120px;
+    right: -342px;
+}
+
+.features-checklist-item {
+    white-space: nowrap;
+    float: right;
+    text-align: justify;
+    display: block;
+    top: -230px;
+    position: relative;
+    font-size: large;
+    color: #815ca6;
+
+}
+
+.features-checklist-item:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    background: url(../img/Check-box.svg) no-repeat right;
+    width: 20px;
+    height: 20px;
+    bottom: 0;
+    left: -30px;
+}
+
+.features-list {
+    list-style: none;
+    margin: 0 auto;
+}
+
+.mains-lower {
+    background: #eff2f5;
+}
+
+.main-heading {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main-heading-text {
+    color: grey;
+    display: block;
+    text-transform: uppercase;
+    font: bold 30px/1 Ubuntu, sans-serif;
+    padding-top: 30px;
+}
+
+.main-heading-desc {
+    font: 300 10px/1 sans-serif;
+    color: grey;
+}
+
+.main-item-desc {
+    color: #b8bec6;
+}
+
+.color-text {
+    color: black;
+}
+.main-item-pic{
+    margin-top: 84px;
+}
+
+.main-item-pic-2 {
+    top: -183px;
+    position: relative;
+    padding: 0 0 0 330px;
+    margin-top: 0px;
+}
+
+.main-item-desc-2 {
+    text-align: center;
+    color: #b8bec6;
+    top: -183px;
+    left: -30px;
+    position: relative;
+}
+.main-item-pic-3{
+    text-align: right;
+
+}
+.main-connect-btn{
+    text-align: center;
+    position: relative;
+    top: -310px;
+    left: -30px;
+}
+.main-item-desc-3{
+    text-align: right;
+    color: grey;
+    position: relative;
+    top: -345px;
+}
+
+.mains-list{
+    list-style: none;
+}
+.footer {
+    height: 204px;
+}
+
+@media screen and (max-width: 767px) {
+    .header, .menu-container {
+        height: auto;
+    }
+
+    .menu-container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .menu-item {
+        display: block;
+    }
+
+    .menu-link {
+        width: 100%;
+        line-height: 1.5;
+        border: none;: border-left;
+    }
+}
